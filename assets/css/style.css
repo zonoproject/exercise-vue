@@ -1,0 +1,48 @@
+/* 共通 */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* tab */
+#tab .tabs {
+  display: flex;
+}
+
+#tab .tabs li {
+  padding: 5px 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#tab .tabs li.active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* modal */
+#modal .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#modal .content {
+  text-align: center;
+  width: 50%;
+  padding: 1em;
+  background: #fff;
+  z-index: 10;
+}
